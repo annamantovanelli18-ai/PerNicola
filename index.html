@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Per Nicola ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<div id="stars"></div>
+<div id="hearts"></div>
+
+
+<button id="musicBtn" onclick="toggleMusic()">
+🎵
+</button>
+
+
+<audio id="music" loop>
+<source src="Ed Sheeran - Perfect.mp3" type="audio/mp3">
+</audio>
+
+
+
+<div class="container">
+
+
+<!-- PAGINA 1 -->
+
+<section class="page active" id="page1">
+
+<h1 id="typing"></h1>
+
+<p>
+Anna ha preparato una piccola sorpresa per te...
+</p>
+
+
+<button onclick="nextPage()">
+Apri la sorpresa ❤️
+</button>
+
+</section>
+
+
+
+
+<!-- PAGINA 2 -->
+
+<section class="page" id="page2">
+
+
+<h2>
+La nostra storia ❤️
+</h2>
+
+
+<div class="gallery">
+
+
+
+
+<img id="galleryImage" src="53BAFF10-AEA2-4EFE-AE52-3CF3C151135C.JPG">
+
+
+
+
+
+</div>
+
+
+<p>
+Ogni momento con te è un ricordo prezioso.
+</p>
+
+
+<button onclick="nextPage()">
+Continua →
+</button>
+
+
+</section>
+
+
+
+
+
+<!-- PAGINA 3 QUIZ -->
+
+
+<section class="page" id="page3">
+
+
+<h2>
+Quanto mi conosci? 😏
+</h2>
+
+
+<p>
+Chi è la ragazza più bella del mondo?
+</p>
+
+
+<button onclick="wrong()">
+Una modella famosa
+</button>
+
+
+<button onclick="wrong()">
+Una cantante
+</button>
+
+
+<button onclick="correct()">
+Anna ❤️
+</button>
+
+
+<h3 id="quizResult"></h3>
+
+
+</section>
+
+
+
+
+
+<!-- PAGINA 4 CONTATORE -->
+
+
+<section class="page" id="page4">
+
+
+<h2>
+Da quanto tempo siamo noi?
+</h2>
+
+
+<div id="daysCounter">
+0
+</div>
+
+
+<p>
+Dal 22 Novembre 2024 scelgo te ogni giorno ❤️
+</p>
+
+
+<button onclick="nextPage()">
+Continua
+</button>
+
+
+</section>
+
+
+
+
+
+
+<!-- PAGINA 5 LETTERA -->
+
+
+<section class="page" id="page5">
+
+
+<h2>
+Una lettera per te 💌
+</h2>
+
+
+<div class="envelope" onclick="openLetter()">
+
+💌
+
+</div>
+
+
+<div class="letter hidden">
+
+<p id="loveText"></p>
+
+</div>
+
+
+<button id="continueLetter"
+onclick="nextPage()"
+style="display:none">
+
+Continua ❤️
+
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- PAGINA 6 FINALE -->
+
+
+<section class="page" id="page6">
+
+
+<h1>
+Per sempre noi ❤️
+</h1>
+
+
+<p class="final">
+
+Nicola, grazie per essere il mio posto felice.
+
+</p>
+
+
+
+<div id="loveClicks">
+
+Amore inviato: 0 ❤️
+
+</div>
+
+
+
+<button onclick="sendLove()">
+
+Mandami un cuore ❤️
+
+</button>
+
+
+
+<button id="secretButton" onclick="showSecret()">
+
+Una cosa che non ti ho mai detto...
+
+</button>
+
+
+
+<div id="secret" class="hidden">
+
+<h2>
+Per Nicola ❤️
+</h2>
+
+
+<p>
+
+Dal giorno in cui sei entrato nella mia vita
+hai reso tutto più bello.
+
+Non prometto una vita perfetta,
+ma prometto di esserci.
+
+Nei giorni belli,
+nei giorni difficili,
+nelle risate e nei momenti semplici.
+
+Ti sceglierei ancora.
+
+Sempre.
+
+❤️
+
+Anna
+
+</p>
+
+</div>
+
+
+
+</section>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
